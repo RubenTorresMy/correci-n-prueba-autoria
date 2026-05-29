@@ -1,76 +1,76 @@
 INSERT INTO agencias
 (id, nombre, pais, fecha_fundacion, autor_examen)
 VALUES
-(1, 'Manolitos', 'España', '2024-01-10', 'Ruben_DAM2');
+(1, 'Manolitos', 'España', '2024-01-10', 'Ruben');
 
 INSERT INTO agencias
 (id, nombre, pais, fecha_fundacion, autor_examen)
 VALUES
-(2, 'Lokitos', 'Peru', '2023-08-19', 'Ruben_DAM2');
+(2, 'Lokitos', 'Peru', '2023-08-19', 'Ruben');
 
 INSERT INTO agencias
 (id, nombre, pais, fecha_fundacion, autor_examen)
 VALUES
-(3, 'Akkaris Company', 'Estados Unidos', '2025-09-02', 'Ruben_DAM2');
+(3, 'Akkaris Company', 'Estados Unidos', '2025-09-02', 'Ruben');
 
 INSERT INTO agencias
 (id, nombre, pais, fecha_fundacion, autor_examen)
 VALUES
-(4, 'DAM', 'Alemania', '2022-11-24', 'Ruben_DAM2');
+(4, 'DAM', 'Alemania', '2022-11-24', 'Ruben');
 
 INSERT INTO agencias
 (id, nombre, pais, fecha_fundacion, autor_examen)
 VALUES
-(5, 'Skere', 'Suiza', '2020-12-12', 'Ruben_DAM2');
+(5, 'Skere', 'Suiza', '2020-12-12', 'Ruben');
 
 
 INSERT INTO satelites
 (id, nombre, orbita, peso, coste, activo, fecha_lanzamiento, agencia_id, autor_examen)
 VALUES
-(1, 'Manolito', 'Orbita terrestre', '300 Kg', 5000, FALSE, '2024-07-10', 1, 'Ruben_DAM2');
+(1, 'Manolito', 'Orbita terrestre', '300 Kg', 5000, FALSE, '2024-07-10', 1, 'Ruben');
 
 INSERT INTO satelites
 (id, nombre, orbita, peso, coste, activo, fecha_lanzamiento, agencia_id, autor_examen)
 VALUES
-(2, 'Skerecito', 'Orbita terrestre', '800 Kg', 10000, TRUE, '2021-02-01', 5, 'Ruben_DAM2');
+(2, 'Skerecito', 'Orbita terrestre', '800 Kg', 10000, TRUE, '2021-02-01', 5, 'Ruben');
 
 INSERT INTO satelites
 (id, nombre, orbita, peso, coste, activo, fecha_lanzamiento, agencia_id, autor_examen)
 VALUES
-(3, 'El Lokito', 'Orbita lunar', '450 Kg', 5000, TRUE, '2024-01-15', 2, 'Ruben_DAM2');
+(3, 'El Lokito', 'Orbita lunar', '450 Kg', 5000, TRUE, '2024-01-15', 2, 'Ruben');
 
 INSERT INTO satelites
 (id, nombre, orbita, peso, coste, activo, fecha_lanzamiento, agencia_id, autor_examen)
 VALUES
-(4, 'Akkari', 'Orbita terrestre', '900 Kg', 30000, TRUE, '2026-04-23', 3, 'Ruben_DAM2');
+(4, 'Akkari', 'Orbita terrestre', '900 Kg', 30000, TRUE, '2026-04-23', 3, 'Ruben');
 
 INSERT INTO satelites
 (id, nombre, orbita, peso, coste, activo, fecha_lanzamiento, agencia_id, autor_examen)
 VALUES
-(5, 'Damsito', 'Orbita lunar', '700 Kg', 7500, TRUE, '2023-02-14', 4, 'Ruben_DAM2');
+(5, 'Damsito', 'Orbita lunar', '700 Kg', 7500, TRUE, '2023-02-14', 4, 'Ruben');
 
 
 INSERT INTO detalle_satelite
 (id, velocidad_maxima, combustible, vida_util, temperatura_maxima, satelite_id, autor_examen)
 VALUES
-(1, '15000 Km/h', '30000', '6 años', '80 grados', 2, 'Ruben_DAM2');
+(1, '15000 Km/h', '30000', '6 años', '80 grados', 2, 'Ruben');
 
 INSERT INTO detalle_satelite
 (id, velocidad_maxima, combustible, vida_util, temperatura_maxima, satelite_id, autor_examen)
 VALUES
-(2, '70000 Km/h', '15000', '10 años', '90 grados', 1, 'Ruben_DAM2');
+(2, '70000 Km/h', '15000', '10 años', '90 grados', 1, 'Ruben');
 
 INSERT INTO detalle_satelite
 (id, velocidad_maxima, combustible, vida_util, temperatura_maxima, satelite_id, autor_examen)
 VALUES
-(3, '40000 Km/h', '80000', '12 años', '120 grados', 5, 'Ruben_DAM2');
+(3, '40000 Km/h', '80000', '12 años', '120 grados', 5, 'Ruben');
 
 INSERT INTO detalle_satelite
 (id, velocidad_maxima, combustible, vida_util, temperatura_maxima, satelite_id, autor_examen)
 VALUES
-(4, '3600 Km/h', '70000', '5 años', '60 grados', 3, 'Ruben_DAM2');
+(4, '3600 Km/h', '70000', '5 años', '60 grados', 3, 'Ruben');
 
 INSERT INTO detalle_satelite
 (id, velocidad_maxima, combustible, vida_util, temperatura_maxima, satelite_id, autor_examen)
 VALUES
-(5, '9000 Km/h', '20000', '10 años', '100 grados', 4, 'Ruben_DAM2');
+(5, '9000 Km/h', '20000', '10 años', '100 grados', 4, 'Ruben');
