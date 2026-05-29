@@ -1,0 +1,20 @@
+ INSERT INTO VALUES AGENCIAS (1,'Manolitos', 'España', TO_DATE('2024-01-10','YYYY-MM-DD'),'Rubén');
+ INSERT INTO VALUES AGENCIAS (2,'Lokitos', 'Perú', TO_DATE('2023-08-19','YYYY-MM-DD'),'Rubén');
+ INSERT INTO VALUES AGENCIAS (3,'Akkaris Company', 'Estados Unidos', TO_DATE('2025-09-02','YYYY-MM-DD'),'Rubén');
+ INSERT INTO VALUES AGENCIAS (4,'DAM', 'Alemania', TO_DATE('2022-11-24','YYYY-MM-DD'),'Rubén');
+ INSERT INTO VALUES AGENCIAS (5,'Skere', 'Suiza', TO_DATE('2020-12-12','YYYY-MM-DD'),'Rubén');
+
+
+
+  INSERT INTO VALUES SATELITES (1,'Manolito', 'Orbita terrestre','300 Kg',5000,'NO ACTIVO' TO_DATE('2024-07-10','YYYY-MM-DD'),1, 'Rubén');
+  INSERT INTO VALUES SATELITES(2,'Skerecito', 'Orbita terrestre','800 Kg',10000,'ACTIVO' TO_DATE('2021-02-01','YYYY-MM-DD'),5, 'Rubén');
+  INSERT INTO VALUES SATELITES (3,'El lokito', 'Orbita lunar','450 Kg',5000,'ACTIVO' TO_DATE('2024-01-15','YYYY-MM-DD'),2, 'Rubén');
+  INSERT INTO VALUES SATELITES (4,'Akkari', 'Orbita terrestre','900 Kg',30000,'ACTIVO' TO_DATE('2026-04-23','YYYY-MM-DD'),3, 'Rubén');
+   INSERT INTO VALUES SATELITES (5,'Damsito', 'Orbita lunar','700 Kg',7500,'ACTIVO' TO_DATE('2023-02-14','YYYY-MM-DD'),4, 'Rubén');
+
+
+  INSERT INTO VALUES DETALLE_SATELITES (1,2,'15000Km/h','30000','6 años','80 grados''Rubén');
+  INSERT INTO VALUES DETALLE_SATELITES (2,1,'70000Km/h','15000','10 años','90 grados''Rubén');
+  INSERT INTO VALUES DETALLE_SATELITES (3,5,'40000Km/h','80000','12 años','120 grados''Rubén');
+  INSERT INTO VALUES DETALLE_SATELITES (4,3,'3600Km/h','70000','5 años','60 grados''Rubén');
+  INSERT INTO VALUES DETALLE_SATELITES (5,4,'9000Km/h','20000','10 años','100 grados''Rubén');

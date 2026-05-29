@@ -1,0 +1,55 @@
+CREATE TABLE AGENCIAS (
+    id_agencia NUMBER(4),
+    nombre_agencia varchar2(150),
+    pais varchar2(150),
+    fecha_fundacion DATE,
+    autor_examen varchar2(150),
+
+    CONSTRAINT PK_ID_AGENCIA PRIMARY KEY(id_agencia),
+    CONSTRAINT UQ_NOMBRE UNIQUE (nombre_agencia),
+    CONSTRAINT NN_FECHA CHECK(fecha_fundacion IS NOT NULL),
+    CONSTRAINT NN_FECHA CHECK(fecha_fundacion IS NOT NULL)
+    );
+
+
+    CREATE TABLE SATELITES (
+        id_satelite NUMBER(4),
+        nombre_satelite varchar2(150),
+        orbita varchar2(150),
+        peso varchar2(150),
+        coste NUMBER (10),
+        activo varchar2(150),
+        fecha_lanzamiento DATE,
+        id_agencia NUMBER(4)
+        autor_examen varchar2(150),
+
+        CONSTRAINT PK_ID_AGENCIA PRIMARY KEY(id_satelite),
+        CONSTRAINT FK_ID_AGENCIAS_SATELITES
+            FOREIGN KEY (id_agencias)
+            REFERENCES AGENCIAS(id_agencias),
+        CONSTRAINT UQ_NOMBRE UNIQUE (nombre_satelite),
+        CONSTRAINT CK_COSTE
+            CHECK (coste >= 0),
+        CONSTRAINT NN_PESO CHECK(peso IS NOT NULL),
+        CONSTRAINT CK_ACTIVO
+            CHECK (
+                activo IN (
+                    'ACTIVO',
+                    'INACTIVO') ),
+        CONSTRAINT NN_LANZAMIENTO CHECK(fecha_lanzamiento IS NOT NULL)
+        );
+
+
+        CREATE TABLE DETALLE_SATELITE(
+        id_detalle_satelite NUMBER(4),
+        id_satelite NUMBER(4),
+        velocidad maxima varchar2(150),
+        combustible varchar2(150),
+        vida_util varchar2(150),
+        temperatura_maxima varchar2(150),
+        autor_examen varchar2(150),
+
+        CONSTRAINT PK_ID_DETALLE_SATELITES PRIMARY KEY(id_detalle_satelite),
+                CONSTRAINT FK_ID_SATELITES_DETALLE_SATELITE
+                    FOREIGN KEY (id_satelite)
+                    REFERENCES SATELITES(id_satelite),

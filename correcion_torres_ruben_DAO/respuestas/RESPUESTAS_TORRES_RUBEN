@@ -1,0 +1,14 @@
+PREGUNTA 1
+Explica cómo funciona la relación 1:N entre Agencia y Satelite tanto en
+SQL como en Java.
+"La relación es 1:N basicamente y explicado de forma muy sencilla, porque UNA agencia puede tener muchos satelites, en cambio los satelites solo pueden tener 1 agencia"
+PREGUNTA 2
+Explica por qué en Java utilizamos:
+private Agencia agencia;
+y no:
+private int agenciaId;
+"Pues porque en Java queremos trabjar con el objeto completo y no con su identificador (Id)"
+PREGUNTA 3
+Explica qué ventaja aporta PreparedStatement frente a concatenar SQL
+manualmente.
+"Entre otras porque es más seguro y el codigo es más facil de leer"
