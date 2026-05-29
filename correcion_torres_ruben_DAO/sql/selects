@@ -1,0 +1,24 @@
+//Buscar todos los sátelites
+SELECT *
+FROM satelites;
+
+
+//Buscar sátelites por id
+SELECT *
+FROM satelites
+WHERE id = 1;
+
+
+//buscar sátelites por agencia
+SELECT *
+FROM satelites
+WHERE agencia_id = 1;
+
+
+//buscar sátelites con detalle
+SELECT s.nombre,
+       d.velocidad_maxima,
+       d.combustible
+FROM satelites s
+INNER JOIN detalle_satelite d
+ON s.id = d.satelite_id;
